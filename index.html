@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style type="text/css" media="screen">
+        body{width: 100%; height: 100%; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAALElEQVQoU2M8c+bMfwYcwNjYGJcUA+OoRloEzn8gwBXmZ8+exR0doxppEDgASDBIqGYBoxkAAAAASUVORK5CYII=);
+        cursor: url('./korn.png') 2 4;}
+
+        .input {
+        position: absolute;
+        top: 25%;
+        left: 30%;
+        z-index: 2;
+        display: none;
+        }
+        .input:after {
+  content: '.png';
+  font-size: 60px;
+  left: 584px;
+  position: absolute;
+  top: 27px;
+  color: #F08080;
+        }
+        .input .filename {
+  font-size: 66px;
+  text-align: center;
+  padding: 10px;
+  width: 675px;
+        }
+      </style>
+    </head>
+    <body>
+      <div class="input">
+        <a class="close" href="javascript:void(0);">X</a>
+        <input type="text" class="filename" name="" value="myimage" />
+      </div>
+      <canvas width="1600" height="900"></canvas>
+      <script type="text/javascript" src="glitch-canvas.min.js"></script>
+      <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>

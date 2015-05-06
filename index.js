@@ -53,13 +53,16 @@ document.querySelector('.close', function() {
   input.style.display = 'none';
 });
 
-can.addEventListener('mousemove', function(ev) {
+function evHandle(ev) {
   if (init) initialize();
   if (shouldPlace(ev)) {
     lastPlace = [ev.clientX - 50, ev.clientY - 50];
     place(lastPlace);
   }
-})
+}
+
+can.addEventListener('mousemove', evHandle);
+can.addEventListener('touchmove', evHandle);
 
 // can.addEventListener('click', glitchIt);
 function initialize() {

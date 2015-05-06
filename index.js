@@ -63,6 +63,8 @@ function evHandle(ev) {
 
 can.addEventListener('mousemove', evHandle);
 can.addEventListener('touchmove', evHandle);
+can.addEventListener('touchend', evHandle);
+can.addEventListener('touchstart', evHandle);
 
 // can.addEventListener('click', glitchIt);
 function initialize() {
